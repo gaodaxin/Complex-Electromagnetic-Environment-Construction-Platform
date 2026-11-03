@@ -1,0 +1,23 @@
+#include "xparameters.h"
+#include "stdint.h"
+#include "xil_io.h"
+#define   BRAM_BASE_ADDR    XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR
+void  DevFpgaWrite(uint16_t usAddr,uint32_t Data);
+uint32_t DevFpgaRead(uint16_t usAddr);
+
+
+#define  BUS_TEST_ADDR          	 (0X00)
+#define  HMC7044_CONFIG_ADDR		 (0x00)
+#define  HMC7044_RECONFIG_ADDR		 (0x01)
+#define  HMC7044_RECONFIG_DATA_ADDR	 (0x02)
+#define  Sys_Rst_Addr			 	 (0x03)
+#define  DAC_ENABLE_ADDR	 	 	 (0x04)
+#define  HMC7044_SYNC_REQ_ADDR	 	 (0x06)
+#define  HMC7044_RD_ADDR	 		 (0x07)
+#define  HMC7044_BRAM_RD_ADDR	 	 (0x08)
+#define  DDS_SEL_ADDR		 		 (0x09)
+#define  HMC7044_RD_ENABLE_ADDR	 	 (0x0A)
+
+
+
+//hmc parameter define
